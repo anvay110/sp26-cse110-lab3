@@ -1,0 +1,265 @@
+
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta
+      name="description"
+      content="meeting minutes for the algorithms study session"
+    />
+
+    <title>algorithms study session - meeting minutes</title>
+
+    <link rel="icon" type="image/png" href="screenshots/favicon.png" />
+
+  </head>
+
+  <body>
+
+    <header>
+      
+      <h1>algorithms study session</h1>
+      <h2>topic : binary search trees</h2>
+      <h3>date : April 8, 2026</h3>
+
+      <nav>
+
+        <ul>
+
+          <li><a href="#attendance-agenda">attendance & agenda</a></li>
+          <li><a href="#unfinished-business">unfinished business</a></li>
+          <li><a href="#new-business">new business</a></li>
+          <li><a href="#media-diagrams">media & diagrams</a></li>
+
+        </ul>
+
+      </nav>
+
+      <hr />
+      
+    </header>
+
+    <main>
+
+      <section id="attendance-agenda">
+
+        <h3>attendance & agenda</h3>
+
+        <div>
+
+          <p><b>present :</b> Alice <i>(study lead)</i>, Bob, Charlie</p>
+          
+          <ul>
+
+            <li>Alice</li>
+            <li>Bob</li>
+            <li>Charlie</li>
+
+          </ul>
+
+        </div>
+
+        <div>
+
+          <p><b>agenda :</b></p>
+
+          <ol>
+
+            <li>review unfinished business from last week</li>
+            <li>learn binary search tree insertion and deletion</li>
+            <li>assign leetcode practice problems</li>
+
+          </ol>
+          
+        </div>
+
+      </section>
+
+      <section id="unfinished-business">
+
+        <h3>unfinished business</h3>
+
+        <p>
+
+          from the last session, we still need to review merge sort time complexity 
+          <br>
+          Charlie mentioned that we <em>really</em> need to practice dynamic programming soon before the midterm
+
+        </p>
+
+      </section>
+
+      <section id="new-business">
+
+        <h3>new business</h3>
+
+        <p>
+          
+          we went over edge cases for tree traversals. 
+          the group agreed that understanding the difference between pre-order and post-order traversal is <strong>absolutely mandatory</strong> for the exam
+
+        </p>
+
+        <p>
+
+          <span>Bob suggested going over Dijkstra's algorithm</span>, but we decided to hold off on that until next week's graph theory session
+
+        </p>
+
+        <details>
+
+          <summary>miscellaneous comments & questions</summary>
+          
+          <p>Alice asked if we should write our practice solutions in Python or Java. we will vote on this in the group chat</p>
+
+        </details>
+
+      </section>
+
+      <section id="media-diagrams">
+
+        <h3>media & diagrams</h3>
+        
+        <p>whiteboard architecture diagram (binary search tree) :</p>
+
+        <img src="screenshots/bst-diagram.png" alt="diagram of a binary search tree" width="400" />
+        
+        <p>meeting video recording (BST tutorial) :</p>
+
+        <video controls width="400">
+
+          <source src="screenshots/bst-video.mp4" type="video/mp4" />
+          your browser does not support the video tag
+
+        </video>
+        
+        <p>meeting audio recording (BST audio extracted) :</p>
+
+        <audio controls>
+
+          <source src="screenshots/bst-audio.mp3" type="audio/mpeg" />
+          your browser does not support the audio element
+
+        </audio>
+        
+      </section>
+
+    </main>
+
+    <footer>
+
+      <hr />
+
+      <h3>course feedback survey</h3>
+
+      <form action="#" method="GET">
+
+        <fieldset>
+
+          <legend>student information</legend>
+          
+          <label for="student-name">name :</label>
+          <input type="text" id="student-name" name="student-name" placeholder="enter your name" required />
+          
+          <br>
+          <br>
+
+          <label for="survey-date">date completed :</label>
+          <input type="date" id="survey-date" name="survey-date" />
+          
+          <br>
+          <br>
+
+          <label for="year">year in university :</label>
+          <select id="year" name="year">
+
+            <option value="freshman">freshman</option>
+            <option value="sophomore">sophomore</option>
+            <option value="junior">junior</option>
+            <option value="senior">senior</option>
+
+          </select>
+          
+          <br>
+          <br>
+
+          <label for="browser">favorite web browser :</label>
+          <input list="browsers" name="browser" id="browser" placeholder="type or select..." />
+          
+          <datalist id="browsers">
+
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Safari"></option>
+            <option value="Edge"></option>
+
+          </datalist>
+
+        </fieldset>
+        
+        <br>
+        
+        <fieldset>
+
+          <legend>course experience</legend>
+
+          <p>how difficult is the course so far ?</p>
+
+          <input type="radio" id="easy" name="difficulty" value="easy" />
+          <label for="easy">easy</label>
+          
+          <br>
+          
+          <input type="radio" id="medium" name="difficulty" value="medium" />
+          <label for="medium">medium</label>
+          
+          <br>
+          
+          <input type="radio" id="hard" name="difficulty" value="hard" />
+          <label for="hard">hard</label>
+          
+          <br>
+          <br>
+
+          <p>which topics do you want to review ? (check all that apply)</p>
+          
+          <input type="checkbox" id="trees" name="topics" value="trees" />
+          <label for="trees">trees</label>
+          
+          <br>
+          
+          <input type="checkbox" id="graphs" name="topics" value="graphs" />
+          <label for="graphs">graphs</label>
+          
+          <br>
+          
+          <input type="checkbox" id="sorting" name="topics" value="sorting" />
+          <label for="sorting">sorting algorithms</label>
+          
+          <br>
+          <br>
+
+          <label for="feedback">additional feedback :</label>
+          
+          <br>
+          
+          <textarea id="feedback" name="feedback" rows="4" cols="40" placeholder="let us know what you think..."></textarea>
+          
+          <br>
+          <br>
+
+          <button type="submit">submit survey</button>
+
+        </fieldset>
+
+      </form>
+
+    </footer>
+
+  </body>
+
+</html>
