@@ -2,70 +2,85 @@
 /* CSS variable with fallback */
 :root {
 
-    --main-color: #2c3e50;
+    --main-color: #e0e0e0;
 
 }
 
 /* hex color */
 body {
 
-    color: #2c3e50;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #e0e0e0;
+    background-color: #1a1a2e;
 
 }
 
 /* named color */
 hr {
 
-    border-color: lightgray;
+    border-color: slategray;
 
 }
 
 /* rgb */
-h1 {
+header {
 
-    color: rgb(44, 62, 80);
+    background-color: rgb(22, 33, 62);
 
 }
 
 /* hsl */
-h2 {
+h1 {
 
-    color: hsl(210, 29%, 24%);
+    color: hsl(210, 80%, 70%);
+
+}
+
+/* CSS variable usage with fallback */
+h2, h3 {
+
+    color: var(--main-color, #ccc);
 
 }
 
 /* rgba */
 nav {
 
-    background-color: rgba(44, 62, 80, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
 
 }
 
 /* hsla */
-header {
+main {
 
-    background-color: hsla(210, 29%, 24%, 0.03);
-
-}
-
-/* CSS variable usage with fallback */
-h3 {
-
-    color: var(--main-color, #333);
+    background-color: hsla(222, 47%, 15%, 0.9);
 
 }
 
 /* wider-gamut color() */
 footer {
 
-    background-color: color(srgb 0.17 0.24 0.31);
+    background-color: color(srgb 0.08 0.1 0.18);
 
 }
 
 /* color-mix() */
-main {
+fieldset {
 
-    background-color: color-mix(in srgb, white 90%, #2c3e50 10%);
+    background-color: color-mix(in srgb, #1a1a2e 70%, #4a90d9 30%);
+
+}
+
+/* form field visibility fixes */
+input, select, textarea {
+
+    background-color: #2a2a4a;
+    color: #e0e0e0;
+    border: 1px solid slategray;
+
+}
+
+input::placeholder, textarea::placeholder {
+
+    color: #888;
 
 }
