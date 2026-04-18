@@ -84,7 +84,7 @@ nav ul {
     
 }
 
-/* hsla | margin auto */
+/* hsla | margin auto | grid layout */
 main {
 
     background-color: hsla(222, 47%, 15%, 0.9);
@@ -100,6 +100,10 @@ footer {
     padding: 20px;
     font-size: 10pt;
     min-height: 1cm;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
     
 }
 
