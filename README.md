@@ -1,2 +1,1 @@
-# Lab 2 - Starter
-https://anvay110.github.io/Lab2_Starter/#media-diagrams
+https://anvay110.github.io/sp26-cse110-lab3/
