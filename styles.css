@@ -14,7 +14,7 @@ body {
     font-size: 1rem;
     line-height: 1.5em;
     width: 100%;
-    font-family: 'Source Code Pro';
+    font-family: 'Source Code Pro', sans-serif;
 
 }
 
@@ -172,6 +172,94 @@ section {
     footer {
 
         padding: 10px;
+
+    }
+    
+}
+
+/* universal selector */
+* {
+
+    box-sizing: border-box;
+
+}
+
+/* class selector */
+.content-section {
+
+    border-radius: 8px;
+
+}
+
+/* ID selector */
+#attendance-agenda {
+
+    border-left: 3px solid hsl(210, 80%, 70%);
+
+}
+
+/* attribute selector */
+input[type="text"] {
+
+    border-radius: 4px;
+
+}
+
+/* pseudo-class - hover and active */
+nav a:hover {
+
+    color: hsl(210, 80%, 70%);
+
+}
+
+button[type="submit"]:active {
+
+    background-color: hsl(210, 80%, 30%);
+
+}
+
+/* child combinator */
+header > h1 {
+
+    font-size: 2rem;
+
+}
+
+/* adjacent sibling combinator */
+h3 + p {
+
+    margin-top: 0.5rem;
+
+}
+
+/* general sibling combinator */
+h3 ~ p {
+
+    line-height: 1.6em;
+
+}
+
+/* combined selector */
+section.content-section {
+
+    padding: 1.5rem;
+
+}
+
+/* :has() selector */
+fieldset:has(input[type="radio"]) {
+
+    padding: 1rem;
+
+}
+
+/* nested selector */
+nav {
+
+    & a {
+
+        color: #e0e0e0;
+        text-decoration: none;
 
     }
     
