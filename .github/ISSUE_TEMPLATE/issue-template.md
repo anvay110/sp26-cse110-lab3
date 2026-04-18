@@ -8,6 +8,3 @@ assignees: ''
 ---
 
 #### description :
-
-
-#### acceptance criteria :
